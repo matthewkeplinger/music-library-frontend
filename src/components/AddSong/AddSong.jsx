@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import '../App.css';
+import axios from 'axios';
 
 class AddSong extends Component {
     constructor(props) {
@@ -21,9 +22,27 @@ class AddSong extends Component {
 
     handleSubmit = (event) => {
         event.preventDefault();
-        this.props.addSong(this.state)
+        this.addSong(this.state)
     }
-
+    //Add a song to DB
+    async addSong(){
+        const song = {
+            title: this.state.title,
+            artist: this.state.artist,
+            album: this.state.album,
+            release_date: this.state.release_date,
+            genre: this.state.genre,
+            likes: 0
+        }
+        try{
+            let response = await axios.post('http://127.0.0.1:8000/music/', song);
+            console.log(response)
+            window.location.reload();
+        }
+        catch{
+            console.log("Unsuccessful Attempt to Add Song");
+        }
+    }
     render() { 
         return (
             <div>                
@@ -49,15 +68,6 @@ class AddSong extends Component {
                    
                 </form>
             </div>
-
-
-
-
-
-
-
-
-
          );
     }
 }
