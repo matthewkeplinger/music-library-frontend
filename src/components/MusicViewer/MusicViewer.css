@@ -1,12 +1,13 @@
 table {
     border: 1px solid black;
     width: 120%;
+    border-collapse: collapse;
 }
-
-th, td, tr{ 
+th {
+    padding: 2px;
+}
+td, tr{ 
     text-align:left;
+    border-bottom: 1px solid black;
 }
 
-thead {
-    text-align:center;
-}

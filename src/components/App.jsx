@@ -14,7 +14,7 @@ class App extends Component {
     componentDidMount(){
         this.getSongs();
     }
-
+    //Get Songs from API (MySQL backend)
     async getSongs(){
         let response = await axios.get('http://127.0.0.1:8000/music/');
         console.log(response);
@@ -23,11 +23,19 @@ class App extends Component {
         });
     }
 
+    //Delete a song from the DB
+    async deleteSong(ID){
+        let response = await axios.delete(`http://127.0.0.1:8000/music/${ID}/`);
+        console.log(response)
+        window.location.reload();
+    }
+
+
     render() { 
         return (
             <div class = 'center'>
                 <h1>Music Library</h1>
-                <MusicViewer songs = {this.state.songs} />
+                <MusicViewer songs = {this.state.songs} delete = {this.deleteSong} />
             </div>
          );
     }
