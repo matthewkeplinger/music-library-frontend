@@ -9,7 +9,7 @@ class App extends Component {
         super(props);
         this.state = {
             songs : []
-          }
+        }
     }
 
     componentDidMount(){
@@ -33,13 +33,13 @@ class App extends Component {
 
     //Add a song to DB
     async addSong(){
-        const song={
+        const song = {
             title: this.state.title,
             artist: this.state.artist,
             album: this.state.album,
             release_date: this.state.release_date,
             genre: this.state.genre,
-            likes :0
+            likes: 0
         }
         try{
             let response = await axios.post('http://127.0.0.1:8000/music/', song);

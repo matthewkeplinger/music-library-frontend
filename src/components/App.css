@@ -2,7 +2,7 @@
     margin: 0;
     position: absolute;
     top: 10%;
-    left: 15%;
+    left: 20%;
     -ms-transform: translate(0%, 0%);
     transform: translate(0%, 0%);
 }
@@ -23,5 +23,5 @@ th {
 td, tr{ 
     text-align:left;
     border-bottom: 1px solid black;
-    padding: 10px;
+    padding: 5px;
 }
