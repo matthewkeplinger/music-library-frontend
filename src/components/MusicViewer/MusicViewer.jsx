@@ -2,6 +2,9 @@ import React from 'react';
 
 const MusicViewer  = (props) => {
     return (
+        <div>
+            <br/>
+            <h2>Song Library: </h2>
         <table>
             <thead>
                 <th>Title</th>
@@ -23,6 +26,7 @@ const MusicViewer  = (props) => {
                 );
             })}
         </table>
+        </div>
     );
 }
  
