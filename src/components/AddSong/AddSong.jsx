@@ -48,7 +48,7 @@ class AddSong extends Component {
             <div>                
                 <h2>Add Song:</h2>
                 <form onSubmit = {this.handleSubmit}>
-                    <table class = 'table2'>
+                    <table>
                             <thead>
                                 <th>Title</th>
                                 <th>Artist</th>
@@ -61,7 +61,7 @@ class AddSong extends Component {
                                 <td><input type = "text" name = "artist" value={this.state.artist} onChange= {this.handleChange}/></td>                         
                                 <td><input type = "text" name = "album" value={this.state.album} onChange= {this.handleChange}/></td>                          
                                 <td><input type = "text" name = "genre" value={this.state.genre} onChange= {this.handleChange}/></td>                  
-                                <td><input type = "date" name = "release_date" value={this.state.release_date} onChange= {this.handleChange}/></td>
+                                <td><input type = "date" name = "release_date" min = '1750-01-01' max='2021-09-21' value={this.state.release_date} onChange= {this.handleChange}/></td>
                                 <input type = "submit" value = "Add Song"/>
                             </tr>                
                     </table>
