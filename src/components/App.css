@@ -1,12 +1,15 @@
 .center {
     margin: 0;
     position: absolute;
-    top: 10%;
+    top: 2%;
     left: 20%;
     -ms-transform: translate(0%, 0%);
     transform: translate(0%, 0%);
 }
 table {
+    background-color: gray;
+    color: white;
+    opacity: .9;
     border: 1px solid black;
     width: auto;
     border-collapse: collapse;
@@ -24,4 +27,17 @@ td, tr{
     text-align:left;
     border-bottom: 1px solid black;
     padding: 5px;
+}
+body {
+    background-image: url("https://images.pexels.com/photos/3391930/pexels-photo-3391930.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+h1 {
+    color: white;
+    text-align: center;
+}
+h2 {
+    color: white;
+    text-align: left;
 }

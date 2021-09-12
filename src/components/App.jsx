@@ -34,10 +34,9 @@ class App extends Component {
     render() { 
         return (
             <div class = 'center'>
-                <h1>Music Library</h1>
-                <AddSong />
+                <h1>Music Library</h1>        
                 <MusicViewer songs = {this.state.songs} delete = {this.deleteSong} />
-                
+                <AddSong />
             </div>
          );
     }
