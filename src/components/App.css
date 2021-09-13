@@ -10,7 +10,7 @@ table {
     opacity: .93;
     border: 1px solid black;
     border-radius: 10px 10px 10px 10px;
-    width: auto;
+    width: 120%;
     border-collapse: collapse;
 }
 
