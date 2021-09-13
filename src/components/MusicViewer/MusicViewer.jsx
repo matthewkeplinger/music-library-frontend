@@ -15,7 +15,7 @@ const MusicViewer  = (props) => {
             </thead>
             {props.songs.map((song) => {
                 return(
-                        <tr>
+                        <tr key = {song.id}>
                             <td>{song.title}</td>
                             <td>{song.artist}</td>
                             <td>{song.album}</td>
