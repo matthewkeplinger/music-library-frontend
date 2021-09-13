@@ -19,19 +19,19 @@ class SearchBar extends Component {
     handleSubmit = (event) => {
         event.preventDefault();
         let filteredResults = this.props.search.filter(song => {
-            if (song.title.toLowerCase()==this.state.searchTerm.toLowerCase()){
+            if (song.title.toLowerCase()===this.state.searchTerm.toLowerCase()){
                 return song
             }
-            if (song.artist.toLowerCase()==this.state.searchTerm.toLowerCase()){
+            if (song.artist.toLowerCase()===this.state.searchTerm.toLowerCase()){
                 return song
             }
-            if (song.album.toLowerCase()==this.state.searchTerm.toLowerCase()){
+            if (song.album.toLowerCase()===this.state.searchTerm.toLowerCase()){
                 return song
             }
-            if (song.genre.toLowerCase()==this.state.searchTerm.toLowerCase()){
+            if (song.genre.toLowerCase()===this.state.searchTerm.toLowerCase()){
                 return song
             }
-            if (song.release_date.toLowerCase()==this.state.searchTerm.toLowerCase()){
+            if (song.release_date.toLowerCase()===this.state.searchTerm.toLowerCase()){
                 return song
             }
         });
