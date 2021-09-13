@@ -42,7 +42,7 @@ class App extends Component {
     render() { 
         return (
             <div class = 'center'>
-                <h1>Music Library</h1>
+                <h1>React Music Library</h1>
                 <SearchBar search={this.state.songs} filterTrigger= {this.filterSongs}/>        
                 <MusicViewer songs = {this.state.songs} delete = {this.deleteSong} />
                 <AddSong />

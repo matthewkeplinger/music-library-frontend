@@ -1,36 +1,43 @@
 .center {
-    margin: 0;
+    margin:0px;
     position: absolute;
-    top: 2%;
-    left: 12%;
+    top: 1%;
+    left: 20%;
 }
 table {
     background-color: gray;
     color: black;
-    opacity: .9;
+    opacity: .93;
     border: 1px solid black;
     border-radius: 10px 10px 10px 10px;
     width: auto;
     border-collapse: collapse;
 }
+
+tbody{
+    overflow-y: scroll;
+    height: 300px;
+}
 th {
     padding: 10px;
-    font-size: 22px;
+    font-size: 28px;
     text-align: left;
 }
 td, tr{ 
     text-align:left;
     border-bottom: 1px solid black;
     padding: 10px;
-    font-size: 18px;
+    font-size: 20px;
 }
 body {
     background-image: url("https://images.pexels.com/photos/3391930/pexels-photo-3391930.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
     background-size: cover;
+    background-attachment:fixed;
     background-repeat: no-repeat;
 }
 h1 {
     color: white;
+    font-size: 50px;
     text-align: center;
 }
 h2 {

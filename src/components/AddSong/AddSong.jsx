@@ -49,13 +49,11 @@ class AddSong extends Component {
                 <h2>Add Song:</h2>
                 <form onSubmit = {this.handleSubmit}>
                     <table>
-                            <thead>
                                 <th>Title</th>
                                 <th>Artist</th>
                                 <th>Album</th>
                                 <th>Genre</th>
                                 <th>Release Date</th>
-                            </thead>
                             <tr>
                                 <td><input type = "text" name = "title" value={this.state.title} onChange= {this.handleChange}/></td>                          
                                 <td><input type = "text" name = "artist" value={this.state.artist} onChange= {this.handleChange}/></td>                         
