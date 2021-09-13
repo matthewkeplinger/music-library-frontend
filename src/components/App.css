@@ -14,10 +14,6 @@ table {
     border-collapse: collapse;
 }
 
-tbody{
-    overflow-y: scroll;
-    height: 300px;
-}
 th {
     padding: 10px;
     font-size: 28px;
