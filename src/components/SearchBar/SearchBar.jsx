@@ -20,16 +20,28 @@ class SearchBar extends Component {
     handleSubmit = (event) => {
         event.preventDefault();
         let filteredResults = this.props.search.filter(song => {
-            if (song.title.toLowerCase()===this.state.searchTerm.toLowerCase()){
+            //Allow user to search by partial title
+            let songString =song.title.toLowerCase()
+            let userSongSearch = this.state.searchTerm.toLowerCase()
+            if (songString.includes(userSongSearch)){
                 return song
             }
-            if (song.artist.toLowerCase()===this.state.searchTerm.toLowerCase()){
+            //allow user to search by partial artist name
+            let songArtist = song.artist.toLowerCase()
+            let userArtistSearch = this.state.searchTerm.toLowerCase()
+            if (songArtist.includes(userArtistSearch)){
                 return song
             }
-            if (song.album.toLowerCase()===this.state.searchTerm.toLowerCase()){
+            //allow user to search by partial album title
+            let songAlbum = song.album.toLowerCase()
+            let userAlbumSearch = this.state.searchTerm.toLowerCase()
+            if (songAlbum.includes(userAlbumSearch)){
                 return song
             }
-            if (song.genre.toLowerCase()===this.state.searchTerm.toLowerCase()){
+            //Search by family of genres (ex. death metal, hair metal, heavy metal all can be found with metal)
+            let songGenre = song.genre.toLowerCase()
+            let userGenreSearch = this.state.searchTerm.toLowerCase()
+            if (songGenre.includes(userGenreSearch)){
                 return song
             }
             //Allow user to search for a release_date by any part of the date string
