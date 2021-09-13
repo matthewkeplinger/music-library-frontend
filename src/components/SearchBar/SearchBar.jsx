@@ -32,8 +32,9 @@ class SearchBar extends Component {
             if (song.genre.toLowerCase()===this.state.searchTerm.toLowerCase()){
                 return song
             }
-            let dateString = song.release_date.toLowerCase()
-            let userSearch = this.state.searchTerm.toLowerCase()
+            //Allow user to search for a release_date by any part of the date string
+            let dateString = song.release_date
+            let userSearch = this.state.searchTerm
             if (dateString.includes(userSearch)){
                 return song
             }
