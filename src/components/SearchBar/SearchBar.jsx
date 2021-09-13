@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import "../App.css";
 
 class SearchBar extends Component {
     constructor(props) {
@@ -31,7 +32,8 @@ class SearchBar extends Component {
             if (song.genre.toLowerCase()===this.state.searchTerm.toLowerCase()){
                 return song
             }
-            if (song.release_date.toLowerCase()===this.state.searchTerm.toLowerCase()){
+            let dateString = song.release_date
+            if (dateString.toLowerCase()===this.state.searchTerm.toLowerCase()){
                 return song
             }
         });

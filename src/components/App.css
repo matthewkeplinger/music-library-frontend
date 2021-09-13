@@ -2,23 +2,31 @@
     margin: 0;
     position: absolute;
     top: 2%;
-    left: 20%;
+    left: 12%;
+}
+table.center {
+    margin-left:auto;
+    margin-right: auto;
 }
 table {
     background-color: gray;
-    color: white;
+    color: black;
     opacity: .9;
     border: 1px solid black;
+    border-radius: 10px 10px 10px 10px;
     width: auto;
     border-collapse: collapse;
 }
 th {
     padding: 10px;
+    font-size: 22px;
+    text-align: left;
 }
 td, tr{ 
     text-align:left;
     border-bottom: 1px solid black;
-    padding: 5px;
+    padding: 10px;
+    font-size: 18px;
 }
 body {
     background-image: url("https://images.pexels.com/photos/3391930/pexels-photo-3391930.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
