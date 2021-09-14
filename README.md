@@ -2,9 +2,10 @@ Main Screen of React Music Library
 
 ![image](https://user-images.githubusercontent.com/24422068/133284356-44cae82d-fbef-4792-bb13-fbb5f4c381ac.png)
 
-A user can search for any field to include partial searches.  Users can also add a song to the record.
+<br/>A user can search for any field to include partial searches.  Users can also add a song to the record.
 <br/>Currently, to reset the search filter, you must reload the page. Reset function is in the works. 
-This app uses a MySql database and Axios to communicate through a Django API for song information.  The front end is React, HTML, CSS, and Javascript.  
+<br/>This project uses another of my repositories "music-library" as the backend.  That project consists of a MySQL database with Django API interface. 
+<br/> This project also has a sample data JSON included for immediate testing and production.
 
 
 
