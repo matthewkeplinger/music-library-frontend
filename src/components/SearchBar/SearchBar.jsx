@@ -59,14 +59,14 @@ class SearchBar extends Component {
 
     render() { 
         return (
-            <div class = "center">
+            <div className = "center">
                 <br/><br/>
                 <form onSubmit = {this.handleSubmit}>
                     <table>
                         <tr>
                             <td><label><b>Search</b> by Any Column Header (title, artist, album, genre, release date)</label></td>
-                            <td><input title = "search" type = 'text' name = 'searchTerm' value = {this.state.searchTerm} onChange= {this.handleChange}/></td>
-                            <td><input type = 'submit' value='Search'/></td>
+                            <td><input title = "search" type = 'text' size="50" name = 'searchTerm' value = {this.state.searchTerm} onChange= {this.handleChange}/></td>
+                            <td><input type = 'submit' value='Search for Criteria'/></td>
                         </tr>
                     </table>    
                 </form>

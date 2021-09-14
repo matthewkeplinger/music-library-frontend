@@ -45,7 +45,7 @@ class AddSong extends Component {
     }
     render() { 
         return (
-            <div class="center">
+            <div className="center">
                 <br/><br/>               
                 <form onSubmit = {this.handleSubmit}>
                     <table>

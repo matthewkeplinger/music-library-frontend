@@ -2,7 +2,7 @@ import React from 'react';
 
 const MusicViewer  = (props) => {
     return (
-        <div class = "center">
+        <div className = "center">
             <br/><br/>
             <table>
                 <thead>
