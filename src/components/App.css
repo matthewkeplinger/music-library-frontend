@@ -62,3 +62,13 @@ input {
     border-right-style: hidden;
     border-bottom-style: groove;
 }
+button{
+    font-size: 16px;
+    background-color: #E0DBD1;
+    border: 1px solid black;
+    transition-duration: 0.4s;
+}
+button:hover {
+    background-color: black;
+    color: #E0DBD1;
+}
