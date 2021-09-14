@@ -28,7 +28,7 @@ class SearchBar extends Component {
                     <table>
                         <tr>
                             <td><label><b>Search</b> by Any Column Header (title, artist, album, genre, release date)</label></td>
-                            <td><input title = "search" type = 'text' size="50" name = 'searchTerm' onChange= {this.handleChange}/></td>
+                            <td><input title = "search" type = 'text' size="50" name = 'searchTerm' onChange= {this.handleChange} placeholder="Enter Search Criteria Here"/></td>
                         </tr>
                     </table>    
                 </form>

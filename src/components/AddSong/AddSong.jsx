@@ -55,12 +55,12 @@ class AddSong extends Component {
                                 <th>Genre</th>
                                 <th>Release Date</th>
                             <tr>
-                                <td><input type = "text" name = "title" value={this.state.title} onChange= {this.handleChange}/></td>                          
-                                <td><input type = "text" name = "artist" value={this.state.artist} onChange= {this.handleChange}/></td>                         
-                                <td><input type = "text" name = "album" value={this.state.album} onChange= {this.handleChange}/></td>                          
-                                <td><input type = "text" name = "genre" value={this.state.genre} onChange= {this.handleChange}/></td>                  
+                                <td><input type = "text" size = "50" name = "title" value={this.state.title} onChange= {this.handleChange} placeholder="Song Title Here"/></td>                          
+                                <td><input type = "text" name = "artist" value={this.state.artist} onChange= {this.handleChange}placeholder="Artist Here"/></td>                         
+                                <td><input type = "text" name = "album" value={this.state.album} onChange= {this.handleChange}placeholder="Album Title Here"/></td>                          
+                                <td><input type = "text" name = "genre" value={this.state.genre} onChange= {this.handleChange}placeholder="Artist Genre Here"/></td>                  
                                 <td><input type = "date" name = "release_date" min = '1750-01-01' max='2021-09-21' value={this.state.release_date} onChange= {this.handleChange}/></td>
-                                <td><input type = "submit" value = "Add Song"/></td>
+                                <td><button type = "submit" value = "Add Song">Add Song </button></td>
                             </tr>                
                     </table>
                    
