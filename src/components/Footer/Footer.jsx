@@ -1,11 +1,11 @@
 import React from 'react';
-import './Footer.css';
+import '../App.css';
 
 const Footer = () => {
     return ( 
         <div>
             <br/><br/>
-            <h3>Matt Keplinger, 2021</h3>
+            <h4>Matt Keplinger, 2021</h4>
         </div>
         
     );
