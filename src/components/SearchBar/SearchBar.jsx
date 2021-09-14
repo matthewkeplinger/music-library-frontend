@@ -66,7 +66,7 @@ class SearchBar extends Component {
                         <tr>
                             <td><label><b>Search</b> by Any Column Header (title, artist, album, genre, release date)</label></td>
                             <td><input title = "search" type = 'text' size="50" name = 'searchTerm' value = {this.state.searchTerm} onChange= {this.handleChange}/></td>
-                            <td><input type = 'submit' value='Search for Criteriait p'/></td>
+                            <td><input type = 'submit' value='Search for Criteria'/></td>
                         </tr>
                     </table>    
                 </form>
