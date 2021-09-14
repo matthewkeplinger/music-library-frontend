@@ -52,3 +52,7 @@ h4 {
     color: #E0DBD1;
     text-align: right;
 }
+a:link {
+    text-align:right;
+    color: #E0DBD1;
+}
