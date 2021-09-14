@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
 import './App.css';
 import axios from 'axios';
+import Header from './Header/Header';
 import MusicViewer from './MusicViewer/MusicViewer';
 import AddSong from './AddSong/AddSong';
 import SearchBar from './SearchBar/SearchBar';
+import Footer from './Footer/Footer';
 
 class App extends Component {
     constructor(props) {
@@ -41,11 +43,12 @@ class App extends Component {
 
     render() { 
         return (
-            <div class = 'center'>
-                <h1>React Music Library</h1>
+            <div class = "center">
+                <Header />
                 <SearchBar search={this.state.songs} filterTrigger= {this.filterSongs}/>        
                 <MusicViewer songs = {this.state.songs} delete = {this.deleteSong} />
                 <AddSong />
+                <Footer />
             </div>
          );
     }
